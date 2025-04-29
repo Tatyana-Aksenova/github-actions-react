@@ -22,6 +22,7 @@ jobs:
         run: npm run lint
   build:
     runs-on: macos-latest
+    needs: lint
     steps:
       - name: Get the reposotory code
         uses: actions/checkout@v4
