@@ -12,6 +12,7 @@ jobs:
         run: npm run test
   lint:
     runs-on: macos-latest
+    needs: test
     steps:
       - name: Get the reposotory code
         uses: actions/checkout@v4
